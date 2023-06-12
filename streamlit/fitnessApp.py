@@ -11,7 +11,7 @@ import gym_recommendations as gymRec
 def classifyObesity(inputs):
     df = pd.DataFrame(inputs)
     df= bmi.scaleCols(df, std_colsToScale_list=['Height','Weight'], minMax_colsToScale_list= ['Age'])
-    model = joblib.load('obesity.joblib')
+    model = joblib.load('C:/Users/kyriaki.potamopoulou/Documents/DWS/ML/obesity.joblib')
     # Use the model for prediction
     prediction = model.predict(df)
     return prediction[0]
@@ -202,7 +202,7 @@ def generate_end_response():
 def main():
     st.set_page_config(page_title="Keep Fit Value Health", layout="wide")
 
-    with open("data/fitnessGif.json", "r") as f:
+    with open("C:/Users/kyriaki.potamopoulou/Documents/DWS/ML/data/fitnessGif.json", "r") as f:
         data = json.load(f)
     st_lottie(data, speed=0.3, height=200, key="initial")
 
