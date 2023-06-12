@@ -193,7 +193,7 @@ def findColumnSignificance(best_model, X):
     plt.ylabel("Importance")
     plt.show()
 
-    newDf = pd.read_csv('C:/Users/kyriaki.potamopoulou/Documents/DWS/ML/data/obesity.csv', sep=';')
+    newDf = pd.read_csv('data/obesity.csv', sep=';')
     dropAnyUnnamedCols(newDf)
     newDf= scaleCols(newDf, std_colsToScale_list=['Height','Weight'], minMax_colsToScale_list= ['Age'])
     newDf = dropInsignificanceCols(newDf)
