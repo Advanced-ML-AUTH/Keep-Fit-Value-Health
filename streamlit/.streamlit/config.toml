@@ -1,0 +1,32 @@
+# Streamlit Configuration
+
+[general]
+# Set the page title
+# Default: "Streamlit"
+pageTitle = "Keep Fit Value Health"
+
+[server]
+# Set the server port
+# Default: 8501
+port = 8501
+
+# Enable or disable the Streamlit sharing feature
+# Default: false
+enableCORS = false
+
+[logger]
+# Configure the logging level
+# Options: "error", "warning", "info", "debug"
+# Default: "info"
+level = "info"
+
+[theme]
+# Set the Streamlit app theme
+# Options: "light", "dark"
+# Default: "light"
+base = "dark"
+
+[client]
+# Enable or disable the Streamlit client caching
+# Default: true
+caching = true
