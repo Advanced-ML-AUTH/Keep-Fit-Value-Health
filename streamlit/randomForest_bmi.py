@@ -263,7 +263,7 @@ def main():
     best_model, X = findColumnSignificance(best_model, X)
 
     #save model
-    joblib.dump(best_model, 'C:/Users/kyriaki.potamopoulou/Documents/DWS/ML/obesity.joblib')
+    joblib.dump(best_model, 'obesity.joblib')
 
             
     
