@@ -7,9 +7,9 @@ Group project for Advanced Machine Learning course (part of MSc in Data and Web 
 
 -Multi-class classification problems to classify food categories and obesity type:
 
-  -BERT embeddings are obtained for each food name
+    -BERT embeddings are obtained for each food name
 
-  -Scaling, dimensionality reduction and class imbalance techniques incorporated
+    -Scaling, dimensionality reduction and class imbalance techniques incorporated
 
 -Conditional based recommendation system:
 
