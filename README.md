@@ -13,17 +13,17 @@ Group project for Advanced Machine Learning course (part of MSc in Data and Web 
 
 -Conditional based recommendation system:
 
-  -Recommend better variety of food and meal distribution based on food classification​
+      -Recommend better variety of food and meal distribution based on food classification​
 
-  -Recommend personalized physical exercises, by taking into consideration obesity type prediction and info about (any) existing exercise habits
+      -Recommend personalized physical exercises, by taking into consideration obesity type prediction and info about (any) existing exercise habits
 
 -Web App:
 
-  -Build with streamlit         
+      -Build with streamlit         
 
-  -User centric app
+      -User centric app
 
-  -Form based
+      -Form based
 
 Requirements:
-- run requirement.txt
+    - run requirement.txt
