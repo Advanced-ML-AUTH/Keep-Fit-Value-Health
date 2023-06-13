@@ -12,8 +12,8 @@ def removeZero(df):
     dfWithoutZero = df[columnToKeep]
 
     print(dfWithoutZero.head)
-    #dfWithoutZero.to_csv('C:/Users/Paris/Documents/ML/nutrients_csvfileNew.csv', index=False)
-    dfWithoutZero.to_csv('C:/Users/Paris/Documents/ML/chatbot/nutritionNew.csv', index=False)
+    dfWithoutZero.to_csv('nutrients_csvfileNew.csv', index=False)
+    dfWithoutZero.to_csv('nutritionNew.csv', index=False)
 
 def findCategory(dflarge, dfSmall):
     for i, row in dflarge.iterrows():
@@ -26,13 +26,13 @@ def findCategory(dflarge, dfSmall):
                 dflarge.loc[i, 'Category'] = category
                 break  
 
-    dfLarge.to_csv('C:/Users/Paris/Documents/ML/chatbot/nutritioCategory.csv', index=False)
+    dfLarge.to_csv('nutritioCategory.csv', index=False)
     dflarge_with_category = dflarge[dflarge['Category'].notnull()]
-    dflarge_with_category.to_csv('C:/Users/Paris/Documents/ML/chatbot/foodWithCategory.csv', index=False)
+    dflarge_with_category.to_csv('foodWithCategory.csv', index=False)
 
 if __name__ == '__main__':
-    dfSmall = pd.read_csv('C:/Users/Paris/Documents/ML/chatbot/nutrients_csvfile.csv')
-    dfLarge = pd.read_csv('C:/Users/Paris/Documents/ML/chatbot/nutrition.csv')
+    dfSmall = pd.read_csv('nutrients_csvfile.csv')
+    dfLarge = pd.read_csv('nutrition.csv')
 
     removeZero(dfSmall)
     removeZero(dfLarge)
